@@ -64,11 +64,15 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.el.*;
 
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.JspContext;
 
+import javax.el.ELContext;
+import javax.el.ELClass;
+import javax.el.ELResolver;
+import javax.el.ELException;
+import javax.el.ValueExpression;
 
 /**
  * Defines variable resolution behavior for scoped attributes.
